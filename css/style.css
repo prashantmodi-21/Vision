@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: var(--c-w);
+    font-family: 'Asap Condensed', sans-serif;
+}
+nav{
+    background: #00000050;
+    background-blend-mode: darken;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+    align-items: center;
+}
+#logo img{
+    width: 125px;
+}
+.navbar{
+    display: flex;
+
+}
+.navbar li{
+    list-style: none;
+    margin: 0 2rem;
+}
+.navbar li a{
+    text-decoration: none;
+    color: var(--c-w);
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.social svg{
+    width: 30px;
+    padding: 0 8px;
+}
+.social svg path{
+    fill: var(--c-w);
+}
+#burger{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 1px solid var(--c-w);
+    padding: 4px;
+    display: none;
+}
+.line{
+    width: 20px;
+    height: 0.5px;
+    margin: 4px 0;
+    background-color: var(--c-w);
+}
+#main::before{
+    background: url(../img/bg.jpg) center/cover;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 95vh;
+    z-index: -1;
+}
+#main{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    width: 50%;
+    text-align: center;
+}
+#about{
+    display: flex;
+    justify-content: space-between;
+}
+#about img{
+    width: 40vw;
+}
+#about-content{
+    width: 40vw;
+    margin: auto;
+}
+#about-content h2{
+    padding: 2rem 0;
+}
+#about-content p{
+    padding: 1rem 0;
+}
+#features{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(20, 21, 22);
+    margin-bottom: 4rem;
+}
+.card svg{
+    width: 100px;
+    height: 100px;
+}
+.card svg path{
+    fill: orange;
+    stroke: rgb(20, 21, 22);
+}
+
+    
+.card{
+    text-align: center;
+    width: 30%;
+    padding: 1rem;
+}
+.card h2{
+    padding: 1rem 0;
+    font-size: 2rem;
+}
+#contact{
+    background: #00000050 url(../img/banner-1.jpg) center/cover;
+    background-blend-mode: darken;
+    display: flex;
+    justify-content: space-between;
+}
+/* #contact iframe{
+    
+} */
+#box{
+    width: 40%;
+    height: 420px;
+    background-color: white;
+    padding: 1rem;
+    color: var(--c-b);
+    
+}
+#border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    width: 100%;
+    height: 100%;
+}
+#border span{
+    padding: 1rem 0;
+}
+#promo{
+    background-color: rgb(20, 20, 92);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 4rem 0;
+}
+.btn{
+    background: none;
+    color: var(--c-w);
+    padding: 8px;
+    border: 1px solid white;
+}
+.btn:hover{
+    background: var(--c-w);
+    color: var(--c-b);
+    font-weight: bolder;
+}
+#footer{
+    display: flex;
+    background-color: rgb(20, 21, 22);
+    justify-content: space-between;
+    align-items: center;
+}
+#about-us{
+    width: 40%;
+}
+#about-us img{
+    width: 200px;
+    padding: 0.5rem 0;
+}
+#links h3{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+#links ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+#links ul li a{
+    text-decoration: none;
+    color: gray;
+}
+#links ul li a:hover{
+    
+    color: lightgray;
+}
+.h1{
+    font-size: 4rem;
+}
+.h2{
+    font-size: 3rem;
+}
+.p-4{
+    padding: 4rem;
+}
+.px-4{
+    padding: 4rem 0;
+}
+:root{
+    --c-w: white;
+    --c-b: black;
+}
